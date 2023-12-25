@@ -23,11 +23,10 @@ jobs:
         make
         make install
         cd ..
-        git clone --recursive https://github.com/Maschell/libfat.git
-        cd libfat
+        git clone --recursive https://github.com/wtfloltk/libfat.git libfat2
+        cd libfat2
         ls include
         cd wiiu
-        cp ../include/fat.h .
         make
         make install
         cd ..
