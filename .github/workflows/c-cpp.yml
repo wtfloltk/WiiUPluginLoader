@@ -17,6 +17,7 @@ jobs:
     
     - name: dependencies
       run: |
+        dkp-pacman -Syu lib-ogc --noconfirm
         git clone --recursive https://github.com/dimok789/libiosuhax.git
         cd libiosuhax
         make
