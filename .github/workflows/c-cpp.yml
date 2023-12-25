@@ -25,6 +25,7 @@ jobs:
         git clone --recursive https://github.com/Maschell/libfat.git
         cd libfat
         cd wiiu
+        make
         make install
         cd ..
         cd ..
