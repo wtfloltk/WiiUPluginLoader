@@ -17,8 +17,11 @@ jobs:
     
     - name: dependencies
       run: |
-        apt install curl
-        dkp-pacman -S libogc --noconfirm
+        git clone --recursive https://github.com/curl/curl.git
+        cd curl
+        make
+        make install
+        cd ..
         git clone --recursive https://github.com/dimok789/libiosuhax.git
         cd libiosuhax
         make
