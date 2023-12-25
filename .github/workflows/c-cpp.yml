@@ -24,8 +24,9 @@ jobs:
         cd ..
         git clone --recursive https://github.com/Maschell/libfat.git
         cd libfat
-        make wiiu-release
-        make wiiu-install
+        cd wii u
+        make install
+        cd ..
         cd ..
         git clone --recursive https://github.com/Maschell/dynamic_libs.git
         cd dynamic_libs
