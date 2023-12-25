@@ -17,11 +17,7 @@ jobs:
     
     - name: dependencies
       run: |
-        git clone --recursive https://github.com/curl/curl.git
-        cd curl
-        make
-        make install
-        cd ..
+        git clone --recursive https://github.com/curl/curl.git include/curl
         git clone --recursive https://github.com/dimok789/libiosuhax.git
         cd libiosuhax
         make
